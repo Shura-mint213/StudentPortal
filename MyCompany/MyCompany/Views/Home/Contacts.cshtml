@@ -1,0 +1,14 @@
+﻿@model TextField
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeywords;
+}
+<div class="title-block">@Model.Title</div>
+<br/>
+<div>
+    <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@Model.Id">
+        <img src="~/images/@Model.TitleImagePath" alt="" class="img-block" />
+    </a>
+    @Html.Raw(Model.Text)
+</div>
