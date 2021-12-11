@@ -25,7 +25,7 @@
                         </form>
                         |
                         <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
-                            @($"{entity.Title}")
+                           посмотреть (@($"{entity.Title}"))
                         </a>
                     </div>
                 }
@@ -35,7 +35,6 @@
     <div class="div-box">
         <h3>Редактировать страницы сайта</h3>
         <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageIndex">Главная</a>
-        <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageServices">Наши новость</a>
         <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageContacts">Контакты</a>
         <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageSchedule">Расписание</a>
     </div>

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyCompany.Domain;
 
 namespace MyCompany.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211211093654_NewRolte")]
+    partial class NewRolte
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,14 +51,14 @@ namespace MyCompany.Migrations
                         new
                         {
                             Id = "44546e06-8719-4ad8-b88a-f271ae9d6eab",
-                            ConcurrencyStamp = "f841aca0-5d54-4972-bab4-f31288e40755",
+                            ConcurrencyStamp = "d75a271b-74b3-48e1-bb2a-63bed59fee58",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "55212e65-8569-5ad7-b12a-f271ae9d6eab",
-                            ConcurrencyStamp = "786489df-8a84-4e3a-9c14-ffb29372924f",
+                            ConcurrencyStamp = "1029a898-534c-4de0-b3ff-e0da59dcde09",
                             Name = "student",
                             NormalizedName = "STUDENT"
                         });
@@ -155,13 +157,13 @@ namespace MyCompany.Migrations
                         {
                             Id = "3b62472e-4f66-49fa-a20f-e7685b9565d8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f61913af-995f-4979-aba7-a81dfce8d428",
+                            ConcurrencyStamp = "754eb058-bcfd-4ade-a1ad-1a76cb48082e",
                             Email = "my@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MY@EMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPKqxgeR51a1v9Ttr+JJqwI5STRkrYhsfOCEEHSjP2tCqVzoqY1cPvh/tatf1QdRZQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJltAZaQHw67vWaN3v+lR002swLgyCprDjEz631xng26CHqvFzCIPZ6jw6Z215Ox1Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -171,13 +173,13 @@ namespace MyCompany.Migrations
                         {
                             Id = "5b62452e-4f66-49fa-a20f-e7521b1355d8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a46cb106-5021-4cda-970e-4586e0a842c6",
+                            ConcurrencyStamp = "09746200-4ca4-404f-8684-e9df1daf1a87",
                             Email = "myStudent@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MYSTUDENT@EMAIL.COM",
                             NormalizedUserName = "STUDENT",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMK7UfK3FhyauyTGVGTGEBsfi2Xd0N8UhzvxfYeN5h7vw8PcFG1zsieGHqEw0BSgKA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEM2yzGWdCT450W1AEEflzUTl2b/29yTSLCNkllpnU8kBhNhAkoGXAWkXk45czBOIfQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -356,7 +358,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
                             CodeWord = "PageIndex",
-                            DateAdded = new DateTime(2021, 12, 11, 9, 43, 42, 25, DateTimeKind.Utc).AddTicks(5455),
+                            DateAdded = new DateTime(2021, 12, 11, 9, 36, 51, 544, DateTimeKind.Utc).AddTicks(1453),
                             Text = "Содержание заполняется администратором",
                             Title = "Главная"
                         },
@@ -364,7 +366,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
                             CodeWord = "PageServices",
-                            DateAdded = new DateTime(2021, 12, 11, 9, 43, 42, 26, DateTimeKind.Utc).AddTicks(460),
+                            DateAdded = new DateTime(2021, 12, 11, 9, 36, 51, 545, DateTimeKind.Utc).AddTicks(1130),
                             Text = "Содержание заполняется администратором",
                             Title = "Наши новости"
                         },
@@ -372,7 +374,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
                             CodeWord = "PageContacts",
-                            DateAdded = new DateTime(2021, 12, 11, 9, 43, 42, 26, DateTimeKind.Utc).AddTicks(676),
+                            DateAdded = new DateTime(2021, 12, 11, 9, 36, 51, 545, DateTimeKind.Utc).AddTicks(1592),
                             Text = "Содержание заполняется администратором",
                             Title = "Контакты"
                         },
@@ -380,7 +382,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("5aa21a4c-c16d-932a-14c1-06e6487a643a"),
                             CodeWord = "PageSchedule",
-                            DateAdded = new DateTime(2021, 12, 11, 9, 43, 42, 26, DateTimeKind.Utc).AddTicks(795),
+                            DateAdded = new DateTime(2021, 12, 11, 9, 36, 51, 545, DateTimeKind.Utc).AddTicks(1845),
                             Text = "Содержание заполняется администратором",
                             Title = "Страница студента"
                         });

@@ -17,8 +17,7 @@ namespace MyCompany.Areas.Admin.Controllers
         }
         public IActionResult Index(string codeWord)
         {
-            //var entity = dataManager.Schedules.GetSchedulesByCodeWord(codeWord);
-            return View(/*entity*/);
+            return View();
         }
 
     }
